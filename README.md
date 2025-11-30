@@ -4,12 +4,12 @@ Repository for my LAB211 coursework at FPT University. It includes Java OOP exer
 
 ## Setup
 Follow these steps to prepare your environment:
-1. **Install JDK 17+**
-   - Download the installer for your OS from [Adoptium](https://adoptium.net/) or Oracle.
-   - Install and ensure `java -version` shows the installed JDK on your PATH.
+1. **Install JDK (Oracle JDK 21 recommended)**
+   - Download the Oracle JDK 21 installer for your OS from the [Oracle download page](https://www.oracle.com/java/technologies/downloads/).
+   - Install and verify with `java -version` to ensure the JDK is on your PATH.
 2. **Install Apache NetBeans**
-   - Download the latest Apache NetBeans package from the [official site](https://netbeans.apache.org/download/).
-   - Run the installer and select the JDK you installed when prompted.
+   - Use NetBeans **28** (current LTS) or **23** if you prefer the legacy release line.
+   - Download the appropriate package from the [official site](https://netbeans.apache.org/download/), run the installer, and select your JDK when prompted.
 3. **Clone the repository**
    - `git clone https://github.com/<your-username>/-LAB211-OOP-with-Java.git`
    - Open the cloned folder in NetBeans and configure the project SDK if prompted.
