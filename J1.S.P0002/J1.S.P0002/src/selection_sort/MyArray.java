@@ -23,13 +23,13 @@ public class MyArray {
      * @throws IllegalArgumentException if {@code n} is negative
      */
     public MyArray(int n){
-        if (n < 0) {
-            throw new IllegalArgumentException("Invalid array");
+        if (n <= 0) {
+            throw new IllegalArgumentException("Array size must be positive");
         }
         arr = new int[n];
         Random random = new Random();
         for (int i = 0; i < n; i++) {
-            arr[i] =  random.nextInt(n * 2) - n;
+            arr[i] =  random.nextInt((n * 2) + 1) - n;
         }
     }
 

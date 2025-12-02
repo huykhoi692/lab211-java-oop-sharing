@@ -23,8 +23,8 @@ public class MyArray {
      * @throws IllegalArgumentException if {@code n} is negative
      */
     public MyArray(int n){
-        if (n < 0) {
-            throw new IllegalArgumentException("Invalid array");
+        if (n <= 0) {
+            throw new IllegalArgumentException("Array size must be positive");
         }
         arr = new int[n];
         Random random = new Random();
@@ -61,15 +61,16 @@ public class MyArray {
      * @return the sorted integer array
      */
     public int[] bubbleSort() {
-        boolean sorted = false;
+        boolean swapped;
         for (int i = 0; i < arr.length - 1; i++) {
+            swapped = false;
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     swap(j, j + 1);
-                    sorted = true;
+                    swapped = true;
                 }
             }
-            if (!sorted) {
+            if (!swapped) {
                 break;
             }
         }
