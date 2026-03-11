@@ -1,0 +1,147 @@
+
+LAB211 Assignment
+Type:
+Short Assignment
+
+Code:
+J1.S.P0063
+
+LOC:
+25
+
+Slot(s):
+1
+
+Title
+  Input and display Person Info. 
+Background 
+N/A
+Program Specifications
+Write a program allow user to input and sort person information (name, address, salary)
+Validate salary is a number or not
+Sort Person list ascending
+Show 3 person information by ascending of salary
+Function details: 
+Function 1: Display Gui And Input Data.
+Users run the program. The program prompts users input Data.
+Auto next Function 2.
+Function 2: Perform function
+Program display input information
+Sort person list by salary ascending and exit program
+Expectation of User interface:
+
+=====Management Person programer=====Input Information of PersonPlease input name:NghiaNVPlease input address:Ha NoiPlease input salary:abcYou must input digidt.Please input salary:-2000Salary is greater than zeroPlease input salary:2000Input Information of PersonPlease input name:LienVTPlease input address:Ha NoiPlease input salary:500Input Information of PersonPlease input name:TuanNTPlease input address:Ha NoiPlease input salary:1000Information of Person you have entered:Name:LienVTAddress:Ha NoiSalary:500.0Information of Person you have entered:Name:TuanNTAddress:Ha NoiSalary:1000.0Information of Person you have entered:Name:NghiaNVAddress:Ha NoiSalary:2000.0=====Management Person programer=====Input Information of PersonPlease input name:NghiaNVPlease input address:Ha NoiPlease input salary:abcYou must input digidt.Please input salary:-2000Salary is greater than zeroPlease input salary:2000Input Information of PersonPlease input name:LienVTPlease input address:Ha NoiPlease input salary:500Input Information of PersonPlease input name:TuanNTPlease input address:Ha NoiPlease input salary:1000Information of Person you have entered:Name:LienVTAddress:Ha NoiSalary:500.0Information of Person you have entered:Name:TuanNTAddress:Ha NoiSalary:1000.0Information of Person you have entered:Name:NghiaNVAddress:Ha NoiSalary:2000.0
+=====Management Person programer=====
+Input Information of Person
+Please input name:NghiaNV
+Please input address:Ha Noi
+Please input salary:abc
+You must input digidt.
+Please input salary:-2000
+Salary is greater than zero
+Please input salary:2000
+Input Information of Person
+Please input name:LienVT
+Please input address:Ha Noi
+Please input salary:500
+Input Information of Person
+Please input name:TuanNT
+Please input address:Ha Noi
+Please input salary:1000
+
+Information of Person you have entered:
+Name:LienVT
+Address:Ha Noi
+Salary:500.0
+
+Information of Person you have entered:
+Name:TuanNT
+Address:Ha Noi
+Salary:1000.0
+
+Information of Person you have entered:
+Name:NghiaNV
+Address:Ha Noi
+Salary:2000.0
+
+=====Management Person programer=====
+Input Information of Person
+Please input name:NghiaNV
+Please input address:Ha Noi
+Please input salary:abc
+You must input digidt.
+Please input salary:-2000
+Salary is greater than zero
+Please input salary:2000
+Input Information of Person
+Please input name:LienVT
+Please input address:Ha Noi
+Please input salary:500
+Input Information of Person
+Please input name:TuanNT
+Please input address:Ha Noi
+Please input salary:1000
+
+Information of Person you have entered:
+Name:LienVT
+Address:Ha Noi
+Salary:500.0
+
+Information of Person you have entered:
+Name:TuanNT
+Address:Ha Noi
+Salary:1000.0
+
+Information of Person you have entered:
+Name:NghiaNV
+Address:Ha Noi
+Salary:2000.0
+
+
+Guidelines
+Student must implement methods
+inputPersonInfo 
+displayPersonInfo
+ sortBySalary
+in startup code.
+Example:
+Create a class named Person with properties:
+private String name;
+private String address;
+private double salary;
++ Create constructors: name, address, salary
++ Create get/set functions for Person properties
++ Create function Person inputPersonInfo (String name, String address, String sSalary): 
+ Validate salary is a number or not.
+ If salary is not a number, prompt use to re-input and show error message that salary must be a number.
+ If salary is a negative number prompt use to re-input and show error message that salary must be a positive number.
++ Create a function displayPersonInfo(Person person)
+ Display person properties
++ Create Person[] sortBySalary(Person[] person):
+Sort person by BubbleSort algorithm
++ Create an array of 3 person.
+Function 1: Input Person information
+Program prompt user to input name, address, salary of Person
+Create a function: Person inputPersonInfo (String name,String address, String sSalary) throws Exception
+Input:
+ name: name of Person
+address: address of Person
+salary: salary of Person
+Return value: 
+Person object.
+Exception("Salary is greater than zero"); if input invalid
+Exception("You must input Salary."); if input invalid
+Exception("You must input digit."); if input invalid
+Function 2: Display Person information.
+Program show all Person properties just input
+Create a function: void displayPersonInfo(Person person)
+Input:
+person: Person object
+Function 3: Sort Person array by salary ascending.
+Program display all Person properties sort by Person’s salary
+Create function: Person[] sortBySalary(Person[] person) throws Exception
+Input:
+person: Person array need to be sorted.
+Return value: 
+Person array sorted by salary.
+Exception("Can't Sort Person"); If there a errors
