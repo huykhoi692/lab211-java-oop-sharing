@@ -1,0 +1,150 @@
+
+LAB211 Assignment
+Type:
+Short Assignment
+
+Code:
+J1.S.P0052
+
+LOC:
+69
+
+Slot(s):
+1
+
+Title
+  Write a program to manage the geographic. 
+Background 
+N/A
+Program Specifications
+Develop the Country class including property and method below: 
+protected String countryCode;
+   protected String countryName;
+protected float totalArea;Implement two constructors which having parameter and without parameter.
+Implement fully functions set / get for properties.
+Implement function display () to display information of one country.
+
+
+Develop Country class inheritance EastAsiaCountries class and add the property:
+private String countryTerrain;Implement constructor parameter and use the super keyword to call the constructor of the class Country above. 
+Override  display().
+Develop “ManageEastAsiaCountries” class perform the following functions:
+1. Enter the information for 11 countries in Southeast Asia.
+2. Display already information.
+3. Search the country according to the entered country's name.
+4. Display the information increasing with the country name.
+5. Exit.
+
+Function details: 
+Function 1: Display a menu and ask users to select an option.
+User runs the program. The program prompts users to select an option.
+User selects an option, perform Function 2.
+Function 2: Perform function based on the selected option.
+Option  1: Input the information of 11 countries in East Asia
+Require to input task information including (code, name, total area, terrain) .
+ Check the valid data with the following conditions:
+Total area must be greater than 0.
+ Add data into the program.
+ Return to the main screen.
+Option  2: Display information of countries you’ve just input
+Display information of countries you’ve just input. 
+Return to the main screen.
+Option  3: Search information of countries by user-entered name
+Require to input the country name.
+Display result to main screen
+Return to the main screen.
+Option  4:Exit program
+Expectation of User interface:
+
+Enter code of country: VNEnter name of country: Viet NamEnter total Area: 331698Enter terrain of country: NiceID              Name            Total Area      Terrain         VN              Viet Nam        331698.0        Nice     13                               MENU==========================================================================1. Input the information of 11 countries in East Asia2. Display the information of country you've just input3. Search the information of country by user-entered name4. Display the information of countries sorted name in ascending order  5. Exit ==========================================================================Enter your choice :4Enter the name you want to search for: Viet NamID              Name            Total Area      Terrain         VN              Viet Nam        331698.0         Nice       2ID              Name            Total Area      Terrain         VN              Viet Nam        331698.0        Nice            IDN             Indonesia       1860360.0       Nice      5Enter code of country: VNEnter name of country: Viet NamEnter total Area: 331698Enter terrain of country: NiceID              Name            Total Area      Terrain         VN              Viet Nam        331698.0        Nice     13                               MENU==========================================================================1. Input the information of 11 countries in East Asia2. Display the information of country you've just input3. Search the information of country by user-entered name4. Display the information of countries sorted name in ascending order  5. Exit ==========================================================================Enter your choice :4Enter the name you want to search for: Viet NamID              Name            Total Area      Terrain         VN              Viet Nam        331698.0         Nice       2ID              Name            Total Area      Terrain         VN              Viet Nam        331698.0        Nice            IDN             Indonesia       1860360.0       Nice      5
+Enter code of country: 
+VN
+Enter name of country: 
+Viet Nam
+Enter total Area: 
+331698
+Enter terrain of country: 
+Nice
+ID              Name            Total Area      Terrain         
+VN              Viet Nam        331698.0        Nice     
+1
+3
+                               MENU
+==========================================================================
+1. Input the information of 11 countries in East Asia
+2. Display the information of country you've just input
+3. Search the information of country by user-entered name
+4. Display the information of countries sorted name in ascending order  
+5. Exit 
+==========================================================================
+Enter your choice :
+4
+Enter the name you want to search for: 
+Viet Nam
+ID              Name            Total Area      Terrain         
+VN              Viet Nam        331698.0         Nice       
+2
+ID              Name            Total Area      Terrain         
+VN              Viet Nam        331698.0        Nice            
+
+IDN             Indonesia       1860360.0       Nice      
+5
+Enter code of country: 
+VN
+Enter name of country: 
+Viet Nam
+Enter total Area: 
+331698
+Enter terrain of country: 
+Nice
+ID              Name            Total Area      Terrain         
+VN              Viet Nam        331698.0        Nice     
+1
+3
+                               MENU
+==========================================================================
+1. Input the information of 11 countries in East Asia
+2. Display the information of country you've just input
+3. Search the information of country by user-entered name
+4. Display the information of countries sorted name in ascending order  
+5. Exit 
+==========================================================================
+Enter your choice :
+4
+Enter the name you want to search for: 
+Viet Nam
+ID              Name            Total Area      Terrain         
+VN              Viet Nam        331698.0         Nice       
+2
+ID              Name            Total Area      Terrain         
+VN              Viet Nam        331698.0        Nice            
+
+IDN             Indonesia       1860360.0       Nice      
+5
+
+Guidelines
+Student must implement methods
+addCountryInformation
+getRecentlyEnteredInformation
+searchInformationByName.
+sortInformationByAscendingOrder
+ in startup code.
+Suggestion:
+Function 1: Add information for a country
+Implement the function:: public void addCountryInformation(EastAsiaCountries country) throws Exception
+Input:
+country: Information of a country.
+Return value: List of exceptions. 
+Funtion2: Display information of countries you’ve just input
+Implement the function: public EastAsiaCountries getRecentlyEnteredInformation() throws Exception
+Input:
+Return value: Result or Exception.
+Function 3: Search information of countries by user-entered name 
+Implement the function: public EastAsiaCountries[] searchInformationByName(String name) throws Exception
+Input:
+name: Country name.
+Return value: Result of the finding country.
+Function 4: Displays the names of countries by name ascending 
+Implement the function:: public EastAsiaCountries[]sortInformationByAscendingOrder() throws Exception
+Input:
+Return value: the list has been sorted.
