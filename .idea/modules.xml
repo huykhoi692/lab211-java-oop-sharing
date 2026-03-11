@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/J1.L.P0022/J1.L.P0022.iml" filepath="$PROJECT_DIR$/J1.L.P0022/J1.L.P0022.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J1.S.P0001/J1.S.P0001.iml" filepath="$PROJECT_DIR$/J1.S.P0001/J1.S.P0001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J1.S.P0002/J1.S.P0002.iml" filepath="$PROJECT_DIR$/J1.S.P0002/J1.S.P0002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J1.S.P0065/J1.S.P0065.iml" filepath="$PROJECT_DIR$/J1.S.P0065/J1.S.P0065.iml" />
+      <module fileurl="file://$PROJECT_DIR$/J1.S.P0070/J1.S.P0070.iml" filepath="$PROJECT_DIR$/J1.S.P0070/J1.S.P0070.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lab211-java-oop-sharing.iml" filepath="$PROJECT_DIR$/.idea/lab211-java-oop-sharing.iml" />
+    </modules>
+  </component>
+</project>
